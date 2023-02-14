@@ -10,19 +10,19 @@ class Form extends React.Component {
   
   handleSubmit = (event) => {
     event.preventDefault();
-    const { name, email, observations } = this.props.formData;
-    console.log({ name, email, observations });
-    sendDataToAPI({ name, email, observations });
+    const { name, email, observation } = this.props.formData;
+    console.log({ name, email, observation });
+    sendDataToAPI({ name, email, observation });
   };
 
   render() {
-    const { name, email, observations, setName, setEmail, setObservation } = this.props;
+    const { name, email, observation, setName, setEmail, setObservation } = this.props;
     
     return (
       <form onSubmit={this.handleSubmit}>
         <NameInput name={name} setName={setName} />
         <EmailInput email={email} setEmail={setEmail} />
-        <ObservationInput observation={observations} setObservation={setObservation} />
+        <ObservationInput observation={observation} setObservation={setObservation} />
 
         <button type="submit">Enviar</button>
       </form>
