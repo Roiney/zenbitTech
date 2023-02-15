@@ -6,6 +6,7 @@
     height: 950px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: -1;
   }
   
   .map-image {
@@ -62,6 +63,39 @@ h1 {
     background: #FFFFFF;
     border: 1px solid #DCDCDC;
     border-radius: 10px;
+}
+
+.face-full{
+    position: absolute;
+    left: 1000px;
+    top: 450px;
+}
+
+.face-full-1{
+  position: absolute;
+  left: 1000px;
+  top: 370px;
+}
+
+.smile-2 {
+  position: absolute;
+  transform: rotate(deg);
+  left: 90px;
+  top: 80px;
+}
+
+.eye-6 {
+  position: absolute;
+  left: 70px;
+  top: 80px;
+  transform: rotate(10deg);
+}
+
+.eye-7 {
+  position: absolute;
+  left: 95px;
+  top: 65px;
+  transform: rotate(10deg);
 }
 
 input {

@@ -4,6 +4,10 @@ import { setName, setEmail, setObservation } from '../actions/formActions';
 import NameInput from '../components/NameInput';
 import EmailInput from '../components/EmailInput';
 import Footer from '../components/Footer';
+import Vector from '../images/face.png'
+import Vector2 from '../images/face-2.png'
+import Smile from '../images/smile.png'
+import Eye from '../images/eye.png'
 import ObservationInput from '../components/ObservationInput';
 import { sendDataToAPI } from '../api/sendDataToAPI'
 import Map from '../images/map.png'
@@ -37,11 +41,38 @@ class Form extends React.Component {
             </div>
             <button type="submit">Send message</button>
           </form>
-
+          <div className="face-full">
+            <div className="face">
+              <img alt="face" src={Vector} />
+            </div>
+            <div className="smile">
+              <img alt="smile" src={Smile} />
+            </div>
+            <div className="eye-1">
+              <img alt="eye" src={Eye} />
+            </div>
+            <div className="eye-2">
+              <img alt="eye" src={Eye} />
+            </div>
+          </div>
+          <div className="face-full-1">
+            <div className="face">
+              <img alt="face" src={Vector2} />
+            </div>
+            <div className="smile-2">
+              <img alt="smile-2" src={Smile} />
+            </div>
+            <div className="eye-6">
+              <img alt="eye" src={Eye} />
+            </div>
+            <div className="eye-7">
+              <img alt="eye" src={Eye} />
+            </div>
+          </div>
           <div className='image-container'>
             <img src={Map} alt='Map' className='map-image' />
           </div>
-          
+
         </div>
         <Footer />
       </body>
