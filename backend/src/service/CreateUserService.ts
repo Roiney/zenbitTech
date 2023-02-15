@@ -1,7 +1,6 @@
 import { getRepository } from "typeorm";
 import { Form } from "../entities/Form";
-import { compare } from 'bcryptjs';
-import generateToken from '../utilis/generateToken'
+
 
 type UserRequest = {
 name: string;
