@@ -2,10 +2,10 @@ import axios from 'axios';
 
 export const sendDataToAPI = (formData) => {
   // faz uma requisição POST para a API com os dados do formulário
-  axios.post('http://sua-api.com.br/form', formData)
+  axios.post('http://localhost:3001/forms', formData)
     .then((response) => {
       // sucesso na requisição
-      console.log(formData);
+      console.log(response);
     })
     .catch((error) => {
       // erro na requisição

@@ -11,8 +11,7 @@ function NameInput() {
 
   return (
     <div>
-      <label htmlFor="name">Nome:</label>
-      <input type="text" id="name" onChange={handleNameChange} />
+      <input type="text" id="name" placeholder='Your e-mail*' onChange={handleNameChange} />
     </div>
   );
 }

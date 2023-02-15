@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { setEmail } from '../actions/formActions';
 
+
 function EmailInput() {
   const dispatch = useDispatch();
 
@@ -11,8 +12,7 @@ function EmailInput() {
 
   return (
     <div>
-      <label htmlFor="email">Email:</label>
-      <input type="email" id="email" onChange={handleEmailChange} />
+      <input type="email" id="email" placeholder='Your name*' onChange={handleEmailChange} />
     </div>
   );
 }

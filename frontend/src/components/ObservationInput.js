@@ -11,8 +11,7 @@ function ObservationInput() {
 
   return (
     <div>
-      <label htmlFor="observation">Observação:</label>
-      <textarea id="observation" rows="5" onChange={handleObservationChange}></textarea>
+      <textarea id="observation" rows="5" placeholder='Your message*' onChange={handleObservationChange}></textarea>
     </div>
   );
 }
