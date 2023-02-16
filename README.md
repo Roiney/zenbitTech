@@ -6,12 +6,12 @@ For this challenge, a form screen was developed that is fed by an API.
 <h1 align="center"> How to run the application </h1>
 To run the application on your machine, please follow some steps described below:
 
-*Clone the repository to your machine;
-*Run npm install in the application root directory, in the frontend directory and in the beckend directory;
-*Create a SCHEMA named zenbitTech on your MySQL server and check the environment settings in the .env file that is responsible for connecting the database with the application;
-*After the Schema is created, in the beckend directory run the migrations with the command npm run typeorm migration:run;
-*Next, run the server. The application is pre-configured with the npm run dev command to facilitate this step;
-*In the frontend directory, run the npm start command, responsible for the Angular server.
+* Clone the repository to your machine;
+* Run npm install in the application root directory, in the frontend directory and in the beckend directory;
+* Create a SCHEMA named zenbitTech on your MySQL server and check the environment settings in the .env file that is responsible for connecting the database with the application;
+* After the Schema is created, in the beckend directory run the migrations with the command npm run typeorm migration:run;
+* Next, run the server. The application is pre-configured with the npm run dev command to facilitate this step;
+* In the frontend directory, run the npm start command, responsible for the Angular server.
 
 By following these steps, you can access the application's localhost and consume it.
 
