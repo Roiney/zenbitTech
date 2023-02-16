@@ -1,28 +1,22 @@
-<h1 align="center"> Desafio Técnico da empresa zenbitTech </h1>
+<h1 align="center"> Technical Challenge for zenbitTech Company </h1>
+The technical challenge consisted of an application responsible for registering a form in a relational database, with the frontend programmed in the React library and the backend being a Nodejs application with the typeORM ORM performing the connection with the MySQL database.
 
+For this challenge, a form screen was developed that is fed by an API.
 
-O desafio técnico consistia em uma aplicação responsável pelo cadastro de um formulário em um banco de dados relacional, sendo o frotend programado na biblioteca React e o beckend sendo uma aplicação Nodejs com o ORM typeORM realizando a conexão com o Banco de dados MySQL.
+<h1 align="center"> How to run the application </h1>
+To run the application on your machine, please follow some steps described below:
 
-Para esse desafio, foram desenvolvidas uma tela de formulário, que se alimenta de uma api.
+Clone the repository to your machine;
+Run npm install in the application root directory, in the frontend directory and in the beckend directory;
+Create a SCHEMA named zenbitTech on your MySQL server and check the environment settings in the .env file that is responsible for connecting the database with the application;
+After the Schema is created, in the beckend directory run the migrations with the command npm run typeorm migration:run;
+Next, run the server. The application is pre-configured with the npm run dev command to facilitate this step;
+In the frontend directory, run the npm start command, responsible for the Angular server.
+By following these steps, you can access the application's localhost and consume it.
 
-<h1 align="center"> Como rodar a aplicação </h1>
+For questions and problems with execution, please contact us.
+Contacts in the GitHub profile.
 
-Para rodar a aplicação em sua máquina, por favor, siga alguns passos descritos abaixo:
-
-* Clone o repositório para sua máquina;
-* Rode o npm install na raiz da aplicação, no diretório frontend e no diretório beckend;
-* Crie um SCHEMA de nome zenbitTech no seu servidor MySQL e confira as configurações de ambiente o arquivo .env que é responsável pela conexão do banco com a aplicação;
-* Após a Schema criada, no diretório beckend rode as migrations com o comando npm run typeorm migration:run;
-* A seguir, rode o servidor, a aplicação está pré configurada com o comando npm run dev para facilitar essa etapa;
-* No diretório frontend, rode o comando npm start, responsável pelo server do angular. 
-
-Realizando esses passos você poderá acessar o localhost da aplicação e consumir a mesma.
-
-
-
-Dúvidas e problemas para execução, por favor, entre em contato. 
-Contatos no perfil do GitHub;
-
-<h1 align="center"> Frontend da aplicação</h1>
+<h1 align="center"> Application frontend</h1>
 
 ![](/projeto.png)
