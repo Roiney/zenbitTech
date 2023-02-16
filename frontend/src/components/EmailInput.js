@@ -12,7 +12,7 @@ function EmailInput() {
 
   return (
     <div>
-      <input type="email" id="email" placeholder='Your name*' onChange={handleEmailChange} />
+      <input type="email" id="email" placeholder='Your e-mail*' onChange={handleEmailChange} />
     </div>
   );
 }

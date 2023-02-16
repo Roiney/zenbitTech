@@ -75,29 +75,30 @@ footer {
     /* outros estilos */
 }
 
-@media only screen and (max-width: 600px) {
-    footer {
-        height: auto;
-        padding: 20px;
-    }
+.body-3 {
+    position: absolute;
+    left: 1800px;
+    top: 70px;
+}
 
-    .face {
-        position: relative;
-        margin-bottom: 20px;
-    }
 
-    .smile {
-        position: relative;
-        margin-left: 60px;
-    }
+.smile-3 {
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    transform: rotate(0deg);
+}
 
-    .eye-1 {
-        position: relative;
-        margin-top: 30px;
-    }
+.eye-8 {
+    position: absolute;
+    left: 75px;
+    top: 20px;
+    transform: rotate(180deg);
+}
 
-    .eye-2 {
-        position: relative;
-        margin-top: -30px;
-    }
+.eye-9 {
+    position: absolute;
+    left: 55px;
+    top: 30px;
+    transform: rotate(180deg);
 }

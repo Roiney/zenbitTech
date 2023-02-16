@@ -11,7 +11,7 @@ function NameInput() {
 
   return (
     <div>
-      <input type="text" id="name" placeholder='Your e-mail*' onChange={handleNameChange} />
+      <input type="text" id="name" placeholder='Your name*' onChange={handleNameChange} />
     </div>
   );
 }

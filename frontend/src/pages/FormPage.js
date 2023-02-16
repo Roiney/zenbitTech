@@ -12,13 +12,14 @@ import ObservationInput from '../components/ObservationInput';
 import { sendDataToAPI } from '../api/sendDataToAPI'
 import Map from '../images/map.png'
 import './styleSheet/FormPage.css'
+import Clound from '../images/clound.png'
 
 class Form extends React.Component {
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault();
     const { name, email, observation } = this.props.formData;
-    sendDataToAPI({ name, email, observation });
+    await sendDataToAPI({ name, email, observation })
   };
 
   render() {
@@ -69,6 +70,25 @@ class Form extends React.Component {
               <img alt="eye" src={Eye} />
             </div>
           </div>
+          <div className="body-4">
+            <div className="face">
+              <img alt="face" src={Vector2} />
+            </div>
+            <div className="smile-3">
+              <img alt="smile-3" src={Smile} />
+            </div>
+            <div className="eye-8">
+              <img alt="eye" src={Eye} />
+            </div>
+            <div className="eye-9">
+              <img alt="eye" src={Eye} />
+            </div>
+          </div>
+
+          <div className='clound'>
+            <img src={Clound} alt='Map' />
+          </div>
+
           <div className='image-container'>
             <img src={Map} alt='Map' className='map-image' />
           </div>
@@ -80,16 +100,16 @@ class Form extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    formData: state.form
+  const mapStateToProps = (state) => {
+    return {
+      formData: state.form
+    };
   };
-};
 
-const mapDispatchToProps = {
-  setName,
-  setEmail,
-  setObservation
-};
+  const mapDispatchToProps = {
+    setName,
+    setEmail,
+    setObservation
+  };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Form);

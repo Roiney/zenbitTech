@@ -84,6 +84,12 @@ h1 {
   top: 80px;
 }
 
+.clound {
+  position: absolute;
+  left: 950px;
+  top: 140px;
+}
+
 .eye-6 {
   position: absolute;
   left: 70px;
@@ -131,3 +137,39 @@ select:focus {
     outline: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .image-container {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  
+  .inputName, .inputEmail, .inputObservation {
+    width: 100%;
+    left: 0;
+  }
+
+  .face-full, .face-full-1, .smile-2, .clound, .eye-6, .eye-7 {
+    display: none;
+  }
+  
+  h1 {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  button {
+    position: relative;
+    left: 0;
+    top: auto;
+    margin: 20px auto;
+  }
+}

@@ -7,6 +7,7 @@ import Pinterest from '../images/p.png'
 import Facebook from '../images/facebook.png'
 import Intagran from '../images/instagran.png'
 import Body from "../images/Body.png"
+import Vector2 from '../images/face-2.png'
 import './styleSheet/Footer.css'
 
 const Footer = () => {
@@ -51,6 +52,20 @@ const Footer = () => {
                     <img alt="eye" src={Eye} />
                 </div>
                 <div className="eye-4">
+                    <img alt="eye" src={Eye} />
+                </div>
+            </div>
+            <div className="body-3">
+                <div className="face">
+                    <img alt="face" src={Vector2} />
+                </div>
+                <div className="smile-3">
+                    <img alt="smile-3" src={Smile} />
+                </div>
+                <div className="eye-8">
+                    <img alt="eye" src={Eye} />
+                </div>
+                <div className="eye-9">
                     <img alt="eye" src={Eye} />
                 </div>
             </div>
